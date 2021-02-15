@@ -1,0 +1,227 @@
+
+
+
+13-Feb-21 14:37:39 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 14:37:39 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 14:37:39 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 14:37:39 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+13-Feb-21 14:37:51 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:37:51] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:38:11 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:38:11] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:38:11 - root - ERROR - Unknown Issues in CheckUrl function
+Traceback (most recent call last):
+  File "E:\crio.do WOD\New folder\Backend\helper.py", line 57, in checkUrl
+    x = requests.head(url).headers['Content-Type']
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\api.py", line 104, in head
+    return request('head', url, **kwargs)
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "E:\crio.do WOD\New folder\Backend\xmeme_b\lib\site-packages\requests\models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.google.com': No schema supplied. Perhaps you meant http://www.google.com?
+13-Feb-21 14:38:11 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:38:11] "[31m[1mPOST /memes HTTP/1.1[0m" 406 -
+13-Feb-21 14:49:17 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 14:49:18 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 14:49:18 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 14:49:18 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+13-Feb-21 14:49:20 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:49:20] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:49:39 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:49:39] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:50:02 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:50:02] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:50:05 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:50:05] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:50:06 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:50:06] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:50:32 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:50:32] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:50:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:50:53] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:52:24 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:52:24] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:52:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:52:53] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:53:05 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:05] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:53:05 - root - WARNING - The Given req. isn't an image
+13-Feb-21 14:53:05 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:05] "[31m[1mPOST /memes HTTP/1.1[0m" 406 -
+13-Feb-21 14:53:11 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:11] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:53:25 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:25] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:53:25 - root - WARNING - The Given req. isn't an image
+13-Feb-21 14:53:25 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:25] "[31m[1mPOST /memes HTTP/1.1[0m" 406 -
+13-Feb-21 14:53:44 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:44] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:53:46 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:53:46] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:55:47 - werkzeug - INFO -  * Detected change in 'E:\\crio.do WOD\\New folder\\Backend\\api.py', reloading
+13-Feb-21 14:55:47 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 14:55:47 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 14:55:47 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 14:55:47 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+13-Feb-21 14:56:20 - werkzeug - INFO -  * Detected change in 'E:\\crio.do WOD\\New folder\\Backend\\api.py', reloading
+13-Feb-21 14:56:20 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 14:56:21 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 14:56:21 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 14:56:21 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+13-Feb-21 14:56:32 - werkzeug - INFO -  * Detected change in 'E:\\crio.do WOD\\New folder\\Backend\\api.py', reloading
+13-Feb-21 14:56:32 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 14:56:33 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 14:56:33 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 14:56:33 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+13-Feb-21 14:57:02 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:57:02] "[33mGET / HTTP/1.1[0m" 404 -
+13-Feb-21 14:57:02 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:57:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-Feb-21 14:57:08 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:57:08] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 14:57:10 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:57:10] "[37mGET /memes/1 HTTP/1.1[0m" 200 -
+13-Feb-21 14:57:15 - root - ERROR - No meme with this Id
+Traceback (most recent call last):
+  File "E:\crio.do WOD\New folder\Backend\api.py", line 239, in apiId
+    raise NameError("No Meme with this Id")
+NameError: No Meme with this Id
+13-Feb-21 14:57:15 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 14:57:15] "[33mGET /memes/10 HTTP/1.1[0m" 404 -
+13-Feb-21 15:04:21 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 15:04:22 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 15:04:22 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 15:04:22 - werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13-Feb-21 15:04:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:42] "[32mGET /swagger HTTP/1.1[0m" 308 -
+13-Feb-21 15:04:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:42] "[37mGET /swagger/ HTTP/1.1[0m" 200 -
+13-Feb-21 15:04:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:42] "[37mGET /swagger/swagger-ui.css HTTP/1.1[0m" 200 -
+13-Feb-21 15:04:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:42] "[37mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+13-Feb-21 15:04:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:42] "[37mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+13-Feb-21 15:04:43 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:43] "[37mGET /static/swagger6.json HTTP/1.1[0m" 200 -
+13-Feb-21 15:04:43 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:04:43] "[37mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 200 -
+13-Feb-21 15:15:48 - werkzeug - INFO -  * Detected change in 'E:\\crio.do WOD\\New folder\\Backend\\api.py', reloading
+13-Feb-21 15:15:48 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 15:15:49 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 15:15:49 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 15:15:49 - werkzeug - INFO -  * Running on http://127.0.0.1:8081/ (Press CTRL+C to quit)
+13-Feb-21 15:28:45 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 15:28:45 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 15:28:45 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 15:28:45 - werkzeug - INFO -  * Running on http://127.0.0.1:8081/ (Press CTRL+C to quit)
+13-Feb-21 15:29:06 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:29:06] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:29:06 - root - ERROR - Exception in Post Request
+Traceback (most recent call last):
+  File "E:\crio.do WOD\New folder\Backend\api.py", line 98, in apiMain
+    c1.execute(command)
+sqlite3.OperationalError: unrecognized token: ":"
+13-Feb-21 15:29:06 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:29:06] "[35m[1mPOST /memes HTTP/1.1[0m" 500 -
+13-Feb-21 15:29:08 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:29:08] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:29:12 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:29:12] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:35:08 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:35:08] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:24 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:24] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:24 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:24] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:25 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:25] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:25 - werkzeug - INFO -  * Detected change in 'E:\\crio.do WOD\\New folder\\Backend\\api.py', reloading
+13-Feb-21 15:37:25 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 15:37:25 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 15:37:25 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 15:37:25 - werkzeug - INFO -  * Running on http://127.0.0.1:8081/ (Press CTRL+C to quit)
+13-Feb-21 15:37:25 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:25] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:26 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:26] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:26 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:26] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:27] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:27] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:28 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:28] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:28 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:28] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:29 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:29] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:29 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:29] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:30 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:30] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:30 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:30] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:31 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:31] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:31 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:31] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:32 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:32] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:32 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:32] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:33 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:33] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:33 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:33] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:34 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:34] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:34 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:34] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:35 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:35] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:35 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:35] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:36 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:36] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:36 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:36] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:37 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:37] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:37 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:37] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:38 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:38] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:38 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:38] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:39 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:39] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:39 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:39] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:40 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:40] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:40 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:40] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:41 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:41] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:41 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:41] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:42] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:42 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:42] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:43 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:43] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:43 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:43] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:44 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:44] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:45 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:45] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:45 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:45] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:46 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:46] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:46 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:46] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:47 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:47] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:47 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:47] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:48 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:48] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:48 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:48] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:49 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:49] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:49 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:49] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:50 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:50] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:50 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:50] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:51 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:51] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:51 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:51] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:52 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:52] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:52 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:52] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:53] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:53] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:54 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:54] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:54 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:54] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:55 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:55] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:55 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:55] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:56 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:56] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:56 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:56] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:57 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:57] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:57 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:57] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:58 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:58] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:58 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:58] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:59 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:59] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:37:59 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:37:59] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:38:00 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:00] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:38:00 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:00] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:38:02 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:02] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:38:49 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:49] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:38:50 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:50] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:38:52 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:38:52] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:40:06 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:06] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:40:07 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:07] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:40:08 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:08] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:40:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:27] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:40:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:27] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:40:29 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:40:29] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:41:14 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:14] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:41:15 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:15] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:41:17 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:17] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:41:20 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:20] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:41:44 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:44] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:41:45 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:45] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:41:46 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:41:46] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:03 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:03] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:04 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:04] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:42:07 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:07] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:27] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:27 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:27] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:42:29 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:29] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:53] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:42:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:53] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:42:56 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:42:56] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:43:15 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:43:15] "[37mOPTIONS /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:43:15 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:43:15] "[37mPOST /memes HTTP/1.1[0m" 201 -
+13-Feb-21 15:43:16 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:43:16] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:44:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:44:53] "[37mOPTIONS /memes/2 HTTP/1.1[0m" 200 -
+13-Feb-21 15:44:53 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:44:53] "[37mPATCH /memes/2 HTTP/1.1[0m" 204 -
+13-Feb-21 15:44:55 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:44:55] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:44:59 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:44:59] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:45:23 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:45:23] "[37mOPTIONS /memes/1 HTTP/1.1[0m" 200 -
+13-Feb-21 15:45:23 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:45:23] "[37mPATCH /memes/1 HTTP/1.1[0m" 204 -
+13-Feb-21 15:45:24 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:45:24] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 15:45:34 - werkzeug - INFO - 127.0.0.1 - - [13/Feb/2021 15:45:34] "[37mGET /memes HTTP/1.1[0m" 200 -
+13-Feb-21 19:13:42 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 19:13:43 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 19:13:43 - werkzeug - INFO -  * Debugger PIN: 309-223-633
+13-Feb-21 19:13:43 - werkzeug - INFO -  * Running on http://127.0.0.1:8081/ (Press CTRL+C to quit)
+13-Feb-21 22:00:13 - werkzeug - INFO -  * Restarting with stat
+13-Feb-21 22:00:14 - werkzeug - WARNING -  * Debugger is active!
+13-Feb-21 22:00:14 - werkzeug - INFO -  * Debugger PIN: 288-311-193
+13-Feb-21 22:00:14 - werkzeug - INFO -  * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)

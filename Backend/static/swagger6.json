@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Tewatia",
+    "version": "1.0.0",
+    "title": "Xmeme-API-Documentation",
+    "contact": {
+      "email": "yashbsr3@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "XMeme_API",
+      "description": "API for requesting and return meme requests"
+    }
+  ],
+  "paths": {
+    "/memes": {
+      "get": {
+        "tags": [
+          "Get All the Memes"
+        ],
+        "summary": "Returns All Memes Requests",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/memesRequests"
+            }
+          }
+        }
+      },
+
+      "post": {
+        "tags": [
+          "Post a New Meme"
+        ],
+        "summary": "Post a new Meme Requests",
+        "requestBody": {
+          "description": "Upload a New Meme",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/memeRequestPostBody"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/id"
+            }
+          },
+          "400" : {
+            "description": "Bad request, Incorrect paramaters"
+          },
+          "406" : {
+            "description": "Not accepting Url, url is not Image"
+          },
+          "409" : {
+            "description" : "Unique Constraint Error, url is already present in database"
+          },
+          "500" : {
+            "description" : "Internal Server error, Please Check the logs"
+          }
+        }
+      }
+    },
+    "/memes/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the meme that we want to match",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Get Meme with particular id"
+        ],
+        "summary": "Return the particular meme",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Meme Request id",
+            "schema": {
+              "$ref": "#/components/schemas/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/memesRequest"
+            }
+          },
+          "404" : {
+            "description" : "Id not present, can't update the content"
+          },
+          "500" : {
+            "description" : "Internal Server error, Please Check the logs"
+          }
+
+        }
+      },
+      "patch" : {
+        "tags": [
+          "Update Meme with particular id"
+        ],
+        "summary": "Update the particular meme",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Meme Request id",
+            "schema": {
+              "$ref": "#/components/schemas/id"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Book Request Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/memesRequest"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+            }
+          },
+          "400" : {
+            "description": "Bad request, Incorrect paramaters"
+          },
+          "406" : {
+            "description": "Not accepting Url, url is not Image"
+          },
+          "409" : {
+            "description" : "Unique Constraint Error, url is already present in database"
+          },
+          "404" : {
+            "description" : "Id not present, can't update the content"
+          },
+          "500" : {
+            "description" : "Internal Server error, Please Check the logs"
+          }
+
+        }
+      }
+    },
+  "components": {
+    "schemas": {
+      "id": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+      },
+      "memeRequestPostBody": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "format": "string"
+          },
+          "caption": {
+            "type": "string",
+            "format": "string"
+          },
+          "url":{
+            "type": "string",
+            "format": "url"
+          }
+        }
+      },
+      "memesRequest": {
+        "type": "object",
+        "properties": {
+          "caption": {
+            "type": "string",
+            "format": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "url"
+          }
+        }
+      },
+      "memesResponse": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "format": "string"
+          },
+          "caption": {
+            "type": "string",
+            "format": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "url"
+          }
+        }
+      },
+      "memesRequests": {
+        "type": "object",
+        "properties": {
+          "memesRequest": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/memesResponse"
+            }
+          }
+        }
+      }
+    }
+  }
+}
