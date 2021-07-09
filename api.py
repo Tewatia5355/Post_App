@@ -42,6 +42,13 @@ ult = 0
 # Database Path
 db_path = 'xmeme.db'
 
+# Route for frontend
+@app.route('/',methods=['GET'])
+@cross_origin()
+def home():
+   return render_template('frontend/test.html')
+
+
 # Route ('/memes') for GET and POST Method
 
 
