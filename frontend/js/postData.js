@@ -44,7 +44,7 @@ async function newMeme() {
         //Sending POST request
         var xhr = new XMLHttpRequest();
 
-        var url = "https://aws.crioxmeme.cloudns.asia/memes";
+        var url = "https://xmemeshare.herokuapp.com/memes";
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onreadystatechange = function () {
@@ -115,7 +115,7 @@ async function updateMeme() {
 
     //Send Patch Request
     var xhr = new XMLHttpRequest();
-    var url = `https://aws.crioxmeme.cloudns.asia/memes/${id}`;
+    var url = `https://xmemeshare.herokuapp.com/memes/${id}`;
     xhr.open("PATCH", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
@@ -163,7 +163,7 @@ function updateMemeButton(id) {
 //When Html load, fetch memes from given Url
 
 function getData() {
-    fetch(`https://aws.crioxmeme.cloudns.asia/memes`)
+    fetch(`https://xmemeshare.herokuapp.com/memes`)
         .then((response) => response.json())
         .then((data) => {
 
