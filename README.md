@@ -31,4 +31,4 @@ You can upload new Images as Memes and update the Caption/Url of same also
 ## Made By
 
 - Yash Kumar
-- [Contact me on Email](yashbsr3@gmail.com)
+- [Contact me on Email](mailto:yashbsr3@gmail.com?subject=[GitHub]%20Source%20XMEME%20APP)
